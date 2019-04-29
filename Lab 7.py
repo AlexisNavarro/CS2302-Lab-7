@@ -6,7 +6,8 @@ Created on Thu Apr 25 07:57:25 2019
 CS 2302
 Olac Fuentes
 
-Purpose: to find the path to solve the maze made from lab 6 and to use the graph functions.
+Purpose: to find the path to solve the maze made from lab 6 and to use the graph functions. Additionally I need to use the 3 search functions 
+for graphs which are breadth first search, depth first search, and depth first search with Recursion.
 """
 
 # -*- coding: utf-8 -*-
