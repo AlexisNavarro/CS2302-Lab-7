@@ -6,8 +6,7 @@ Created on Thu Apr 25 07:57:25 2019
 CS 2302
 Olac Fuentes
 
-Purpose: to find the path to solve the maze made from lab 6 and to use the graph functions. Additionally I need to use the 3 search functions 
-for graphs which are breadth first search, depth first search, and depth first search with Recursion.
+Purpose: to find the path to solve the maze made from lab 6 and to use the graph functions.
 """
 
 # -*- coding: utf-8 -*-
@@ -167,7 +166,7 @@ class Graph:
      
  #  method to create the adjacency List its also a method that applies to this lab better
  #  unlike the graph to list method
-def add_edge(G,v1,v2):
+def addEdge(G,v1,v2):
     G.graph[v1].append(v2)
 
 #method to use Breadth First Search
@@ -254,7 +253,7 @@ while numRemove > 0:
     if find(S,w[0]) != find(S,w[1]):
         maze_walls.pop(i) #deletes the wall
         union(S,w[0],w[1])# combines the walls after the deletion
-        add_edge(adjList,w[0],w[1]) # used to create the adjacency List (question 2)
+        addEdge(adjList,w[0],w[1]) # used to create the adjacency List (question 2)
         numRemove-=1
         
 draw_maze(maze_walls,maze_rows,maze_cols)
